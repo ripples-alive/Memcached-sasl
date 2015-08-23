@@ -36,12 +36,12 @@ class MemcachedSaslConnector extends \Illuminate\Cache\MemcachedConnector
             );
         }
 
-        if (!empty($auth)) {
+        if (!empty($auth['username'])) {
             // If require auth, assert memcached sasl is supported.
             if (!ini_get('memcached.use_sasl')) {
                 throw new RuntimeException('Memcached SASL should be supported.');
             }
-            $memcached->setSaslAuthData($auth['user'], $auth['password']);
+            $memcached->setSaslAuthData($auth['username'], $auth['password']);
         }
 
         $memcachedStatus = $memcached->getVersion();
@@ -57,4 +57,4 @@ class MemcachedSaslConnector extends \Illuminate\Cache\MemcachedConnector
         return $memcached;
     }
 
-} 
+}
