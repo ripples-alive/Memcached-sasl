@@ -1,6 +1,6 @@
 # Memcached SASL extension for Laravel5
 
-This is a custom cache extension of memcached sasl for laravel5, supporting aliyun ocs.
+This is a custom cache extension of memcached sasl for laravel5, especially for aliyun ocs.
 
 ## Installation
 
@@ -24,7 +24,7 @@ Finally, add a store to you config file `cache.php` and update cache driver to `
 ```php
 return [
     'default' => 'memcached_sasl',
-    
+
     'stores' => [
         'memcached_sasl' => [
             'driver' => 'memcached_sasl',
