@@ -43,3 +43,7 @@ return [
     ]
 ]
 ```
+
+## LICENSE
+
+[MIT](./LICENSE)

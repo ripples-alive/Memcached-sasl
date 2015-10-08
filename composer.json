@@ -2,6 +2,7 @@
     "name": "ripples/memcached-sasl",
     "description": "Custom cache extension of memcached sasl for laravel5, support aliyun ocs.",
     "type": "library",
+    "license": "MIT",
     "keywords": ["memcached", "sasl", "aliyun", "ocs", "laravel"],
     "homepage": "https://github.com/JayvicWen/Memcached-sasl",
     "authors": [
